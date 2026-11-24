@@ -1,0 +1,21 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+use Illuminate\Database\Eloquent\Concerns\HasUuids;
+
+class Room extends Model
+{
+    use HasUuids;
+
+    protected $fillable = [
+        'slug',
+        'name',
+        'description',
+        'price',
+        'image',
+        'amenities',
+    ];
+}
